@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url(/Api_clock/assets/img/weather.jpg), no-repeat center/cover;
+}
+
+#weather {
+    min-width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: url(/Api_clock/assets/img/weather.jpg) no-repeat center/cover;
+}
+
+.hot{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url(/Api_clock/assets/img/weather.jpg), no-repeat center/cover;
+}
+
+.hot #weather {
+    background: url(/Api_clock/assets/img/sun.gif) no-repeat center/cover;
+    background-color: rgba(255, 140, 0, 0.8);
+    
+}
+
+.cold{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url(/Api_clock/assets/img/weather.jpg), no-repeat center/cover;
+}
+
+.cold #weather {
+    background: url(/Api_clock/assets/img/cold.gif) no-repeat center/cover;
+    background-color: #87CEEB;
+}
+
+.weather__search {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.3);
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.4);
+    transition: 0.4s;
+    font-size: 19px;
+}
+
+.weather__search:focus {
+    background: rgba(255,255,255,0.3);
+    border-radius: 15px 0 15px 0;
+}
+
+.weather__content{
+    text-align: center;
+    margin: 40px 0;
+    transition: 0.4s;
+}
+
+.weather__content-capital {
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.weather__content-time {
+    margin: 15px 0 20px 0;
+    color: white;
+    font-size: 15px;
+}
+
+.weather__content-temperature{
+    font-size: 65px;
+    text-shadow: 4px 4px rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.4);
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+    border: none;
+    border-radius:10px;
+    margin: 0 30px;
+    padding: 20px;
+    color: white;
+}
+
+.weather__content-short--desc{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    color: white;
+    margin: 30px;
+}
+
+.weather__content-more--desc{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.weather__content-more--desc div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.weather__content-more--desc div i {
+    margin: 10px 0;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
