@@ -35,7 +35,7 @@ body {
 }
 
 .cold #weather {
-    background: url(/assets/img/cold.gif) no-repeat center/cover;
+    background: url('../img/cold.gif') no-repeat center/cover;
     background-color: #87CEEB;
 }
 
