@@ -10,22 +10,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url('/assets/img/weather.jpg'), no-repeat center/cover;
 }
 
 #weather {
     min-width: 350px;
     border-radius: 10px;
     padding: 30px 20px;
-    background: url(/assets/img/weather.jpg) no-repeat center/cover;
+    background: url('../img/weather.jpg') no-repeat center/cover;
 }
 
 .hot{
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url('/assets/img/weather.jpg'), no-repeat center/cover;
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url('../img/weather.jpg'), no-repeat center/cover;
 }
 
 .hot #weather {
-    background: url(/assets/img/sun.gif) no-repeat center/cover;
+    background: url('../img/sun.gif') no-repeat center/cover;
     background-color: rgba(255, 140, 0, 0.8);
     
 }
