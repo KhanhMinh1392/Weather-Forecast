@@ -42,6 +42,7 @@ async function changeWeatherUI(capitalSearch) {
 
         if(temp > 20 && temp < 30) {
             shortDesc.innerText = 'Cool'
+            body.setAttribute('class', 'hot');
         }
 
         if (temp > 30) {
