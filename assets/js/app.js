@@ -31,23 +31,23 @@ async function changeWeatherUI(capitalSearch) {
         let temp = Math.round((data.main.temp - 273.15));
         value.innerText = temp;
         shortDesc.innerText = data.weather[0] ? data.weather[0].main : '';
-        time.innerText = new Date().toLocaleString();
 
         body.setAttribute('class', 'hot');
-        console.log(temp);
-        if(temp < 20 ) {
+        if(temp <= 27) {
+            shortDesc.innerText = 'Wind'
+            body.setAttribute('class', 'wind');
+        }
+
+        if(temp <= 20 ) {
             shortDesc.innerText = 'Cold';
             body.setAttribute('class', 'cold');
         }
 
-        if(temp > 20 && temp < 30) {
-            shortDesc.innerText = 'Cool'
+        if(temp >= 26) {
+            shortDesc.innerText = 'Hot'
             body.setAttribute('class', 'hot');
         }
-
-        if (temp > 30) {
-            shortDesc.innerText = 'Hot'
-        }
+        
     } else {
         content.classList.add('hide');
     }

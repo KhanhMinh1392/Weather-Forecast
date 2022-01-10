@@ -24,7 +24,7 @@ body {
 }
 
 .hot #weather {
-    background: url('../img/sun.gif') no-repeat center/cover;
+    background: url('../img/hot1.gif') no-repeat center/cover;
     background-color: rgba(255, 140, 0, 0.8);
     
 }
@@ -36,6 +36,15 @@ body {
 .cold #weather {
     background: url('../img/cold.gif') no-repeat center/cover;
     background-color: #87CEEB;
+}
+
+.wind{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url('../img/weather.jpg'), no-repeat center/cover;
+}
+
+.wind #weather {
+    background: url('../img/wind.gif') no-repeat center/cover;
+    background-color: #3CB371;
 }
 
 .weather__search {
