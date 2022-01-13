@@ -9,6 +9,7 @@ var sun = document.querySelector('.weather__content-more--sun span');
 var time = document.querySelector('.weather__content-time');
 var content = document.querySelector('.weather__content-more--content');
 var body = document.querySelector('body');
+var icon = document.querySelector(".weather__content-img");
 
 // Ngày giờ
 time.innerText = new Date().toLocaleString();
@@ -32,19 +33,18 @@ async function changeWeatherUI(capitalSearch) {
         value.innerText = temp;
         shortDesc.innerText = data.weather[0] ? data.weather[0].main : '';
 
+        icon.src = "https://openweathermap.org/img/wn/"+ data.weather[0].icon +"@2x.png";
+
         body.setAttribute('class', 'hot');
         if(temp <= 27) {
-            shortDesc.innerText = 'Wind'
             body.setAttribute('class', 'wind');
         }
 
         if(temp <= 20 ) {
-            shortDesc.innerText = 'Cold';
             body.setAttribute('class', 'cold');
         }
 
         if(temp >= 26) {
-            shortDesc.innerText = 'Hot'
             body.setAttribute('class', 'hot');
         }
         
